@@ -103,13 +103,13 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
-        
+
     btn.insert(0,
         [
-            InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://t.me/sources_cods/54')
+            InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
         ]
     )
-        
+
     if 0 < offset <= 10:
         off_set = 0
     elif offset == 0:
@@ -683,12 +683,12 @@ async def auto_filter(client, msg, spoll=False):
             for file in files
         ]
 
-     btn.insert(0,
+    btn.insert(0,
         [
-            InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://t.me/sources_cods/54')
+            InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
         ]
     )
-  
+
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
         BUTTONS[key] = search
