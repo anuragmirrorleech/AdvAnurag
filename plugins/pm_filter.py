@@ -103,25 +103,19 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
-
-   btn.insert(0, 
+        
+    btn.insert(0,
         [
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/Official_Movies_Group'),
-            InlineKeyboardButton('sʜᴀʀᴇ ᴍᴇ', url='https://t.me/share/url?url=%2A%2A%F0%9F%98%B1+Search+Zone%C2%B2%C2%B7%E2%81%B0+%F0%9F%98%B1+%0D%0A+%0D%0AWhatever+you+might+ask%2C+you+will+get..+%E2%9D%A4%EF%B8%8F+%0D%0A+%0D%0A%F0%9F%91%87+Join%0D%0A+https%3A%2F%2Ft.me%2FBetter_Filters_Bot'),
-            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/MOVIES_ZILAA')
+            InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://t.me/sources_cods/54')
         ]
     )
-
+        
     if 0 < offset <= 10:
         off_set = 0
     elif offset == 0:
         off_set = None
     else:
         off_set = offset - 10
-        
-    btn.append(
-    [InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://t.me/sources_cods/54')]
-)
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("⏪ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
@@ -689,21 +683,12 @@ async def auto_filter(client, msg, spoll=False):
             for file in files
         ]
 
-    btn.append(
-    [InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://t.me/sources_cods/54')]
-)
-
-    
-
-
-    btn.insert(0, 
+     btn.insert(0,
         [
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/Official_Movies_Group'),
-            InlineKeyboardButton('sʜᴀʀᴇ ᴍᴇ', url='https://t.me/share/url?url=%2A%2A%F0%9F%98%B1+Search+Zone%C2%B2%C2%B7%E2%81%B0+%F0%9F%98%B1+%0D%0A+%0D%0AWhatever+you+might+ask%2C+you+will+get..+%E2%9D%A4%EF%B8%8F+%0D%0A+%0D%0A%F0%9F%91%87+Join%0D%0A+https%3A%2F%2Ft.me%2FBetter_Filters_Bot'),
-            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/sources_cods')
+            InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://t.me/sources_cods/54')
         ]
     )
-    
+  
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
         BUTTONS[key] = search
